@@ -1,5 +1,7 @@
-﻿namespace ConsoleManager {
-	public interface IMenuAction {
-		Menu GetMenu();
-	}
+﻿namespace CommandLineMenu {
+
+    public interface IMenuAction {
+
+        Menu GetMenu();
+    }
 }

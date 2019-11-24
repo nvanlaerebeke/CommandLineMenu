@@ -1,18 +1,20 @@
 ﻿using System;
 
-namespace ConsoleManager {
-	public class RequestInput {
-		private readonly string Message;
-		public RequestInput(string pRequestMessage = "") {
-			Message = pRequestMessage;
-			if(String.IsNullOrEmpty(pRequestMessage)) {
-				Message = "Input";
-			}
-		}
+namespace CommandLineMenu {
 
-		public string Start() {
-			Console.Write($"{Message} => ");
-			return Console.ReadLine();
-		}
-	}
+    public class RequestInput {
+        private readonly string Message;
+
+        public RequestInput(string pRequestMessage = "") {
+            Message = pRequestMessage;
+            if (String.IsNullOrEmpty(pRequestMessage)) {
+                Message = "Input";
+            }
+        }
+
+        public string Start() {
+            Console.Write($"{Message} => ");
+            return Console.ReadLine();
+        }
+    }
 }

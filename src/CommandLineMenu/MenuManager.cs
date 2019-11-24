@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleManager {
+namespace CommandLineMenu {
+
     public class MenuManager {
         public Menu _objMenu;
 
@@ -29,7 +30,7 @@ namespace ConsoleManager {
                             objMenuItem?.Callback.Invoke();
                         }
                     }
-                    if(!found) {
+                    if (!found) {
                         Console.WriteLine("Invalid Input");
                     }
                 }

@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ConsoleManager {
+namespace CommandLineMenu {
+
     public class Menu {
         public List<string> tree = new List<string>();
 
         public event EventHandler menuChanged;
 
         private List<MenuItem> _lstMenu;
+
         public List<MenuItem> MenuItems {
             get {
                 return _lstMenu;
@@ -48,7 +50,6 @@ namespace ConsoleManager {
                 foreach (MenuItem objMenuItem in pMenuItem.SubMenu.MenuItems) {
                     if (objMenuItem.SubMenu != null && objMenuItem.SubMenu.MenuItems.Count > 0) {
                         AddSubmenuEvents(objMenuItem);
-
                     }
                 }
             }
@@ -75,6 +76,5 @@ namespace ConsoleManager {
             strOutput += Environment.NewLine;
             return strOutput;
         }
-
     }
 }

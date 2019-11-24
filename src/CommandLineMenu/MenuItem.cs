@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleManager {
+namespace CommandLineMenu {
     public class MenuItem {
         public string Option { get; private set; }
         public string Title { get; private set; }

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/nvanlaerebeke/CommandLineMenu</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple menu creator for console apps</description>
-    <releaseNotes>Initial Console.CommandLineMenu release</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <releaseNotes>Updated to .NET 5</releaseNotes>
+    <copyright>Copyright 2021</copyright>
     <tags>menu console</tags>
   </metadata>
 </package>

@@ -30,8 +30,10 @@ spec:
       steps {
         container(name: 'dotnet') {
           sh '''#!/bin/bash
-echo "Building the app"          
-dotnet build src/CommandLineMenu/CommandLineMenu/CommandLineMenu.csproj -c Release
+PROJECT=src/CommandLineMenu/CommandLineMenu.csproj
+
+echo "Building $PROJECT"          
+dotnet build "$PROJECT" -c Release
 
 REGISTRY=`cat /etc/nuget-secret/apiUrl`
 APIKEY=`cat /etc/nuget-secret/apiKey`
